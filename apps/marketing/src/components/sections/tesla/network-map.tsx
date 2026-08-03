@@ -1,19 +1,22 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { Zap, Plug } from 'lucide-react';
-import { IMAGES } from '@/lib/images';
 import { TeslaButton } from '@/components/ui/tesla-button';
-import { LazyImage } from '@/components/ui/lazy-image';
 import { Reveal, RevealItem, RevealStagger } from '@/components/motion/reveal';
 
-const MAP_DOTS = [
-  { top: '30%', left: '18%' },
-  { top: '38%', left: '42%' },
-  { top: '45%', left: '68%' },
-  { top: '58%', left: '28%' },
-  { top: '52%', left: '82%' },
-  { top: '65%', left: '55%' },
-];
+const NetworkMapCanvas = dynamic(
+  () =>
+    import('@/components/sections/tesla/network-map-canvas').then(
+      (m) => m.NetworkMapCanvas,
+    ),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-[420px] w-full animate-pulse bg-[#e8e8e8] sm:h-[520px] md:h-[640px]" />
+    ),
+  },
+);
 
 export function NetworkMap({
   stats,
@@ -26,28 +29,9 @@ export function NetworkMap({
 
   return (
     <section className="bg-tesla-cream">
-      <div className="mx-auto max-w-[1200px] px-8 pt-14 md:pt-20">
-        <Reveal direction="fadeIn">
-          <div className="product-frame relative aspect-[2/1] w-full min-h-[240px] sm:min-h-[320px]">
-            <LazyImage
-              src={IMAGES.home.network}
-              fallbackSrc={IMAGES.logistics}
-              alt="Global logistics network"
-              fill
-              wrapperClassName="absolute inset-0"
-              className="object-cover"
-              sizes="100vw"
-            />
-            {MAP_DOTS.map((pos, i) => (
-              <span
-                key={i}
-                className="absolute z-10 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#e82127] shadow-[0_0_0_4px_rgba(232,33,39,0.25)]"
-                style={{ top: pos.top, left: pos.left }}
-              />
-            ))}
-          </div>
-        </Reveal>
-      </div>
+      <Reveal direction="fadeIn">
+        <NetworkMapCanvas />
+      </Reveal>
 
       <div className="mx-auto grid max-w-[1200px] gap-12 px-8 py-14 md:grid-cols-2 md:items-start md:py-20">
         <Reveal>

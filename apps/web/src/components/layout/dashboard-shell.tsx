@@ -25,6 +25,7 @@ import {
   Menu,
   X,
   Palette,
+  GraduationCap,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useAuthStore, logout } from '@chasehorse/auth-client';
@@ -63,6 +64,7 @@ const NAV_CONFIG: Record<UserRole, NavItem[]> = {
     { label: 'Reports', href: '/company/reports', icon: BarChart3 },
     { label: 'Integrations', href: '/company/integrations', icon: Plug },
     { label: 'Support', href: '/company/support', icon: HeadphonesIcon },
+    { label: 'Courses', href: '/company/courses', icon: GraduationCap },
   ],
   branch_manager: [
     { label: 'Dashboard', href: '/branch', icon: LayoutDashboard },
@@ -81,6 +83,7 @@ const NAV_CONFIG: Record<UserRole, NavItem[]> = {
     { label: 'Book', href: '/portal', icon: Package },
     { label: 'Track', href: '/portal/track', icon: Truck },
     { label: 'Invoices', href: '/portal/invoices', icon: CreditCard },
+    { label: 'Courses', href: '/portal/courses', icon: GraduationCap },
     { label: 'Support', href: '/portal/support', icon: HeadphonesIcon },
   ],
   enterprise_user: [

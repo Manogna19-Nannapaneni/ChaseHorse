@@ -1,8 +1,10 @@
 'use client';
 
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { IMAGES } from '@/lib/images';
+import { useSafeReducedMotion } from '@/lib/use-safe-reduced-motion';
 
 type AspectPreset = 'hero' | 'product' | 'square' | 'wide';
 
@@ -19,6 +21,8 @@ interface ProductFrameProps {
   aspect?: AspectPreset;
   fit?: 'cover' | 'contain';
   priority?: boolean;
+  /** Subtle scroll-driven drift on the image inside its frame. */
+  parallax?: boolean;
   className?: string;
   children?: ReactNode;
 }
@@ -34,19 +38,28 @@ export function ProductFrame({
   aspect = 'hero',
   fit = 'cover',
   priority = false,
+  parallax = false,
   className,
   children,
 }: ProductFrameProps) {
   const [imgSrc, setImgSrc] = useState(src || IMAGES.logistics);
+  const frameRef = useRef<HTMLDivElement>(null);
+  const reducedMotion = useSafeReducedMotion();
 
   useEffect(() => {
     setImgSrc(src || IMAGES.logistics);
   }, [src]);
 
+  const { scrollYProgress } = useScroll({
+    target: frameRef,
+    offset: ['start end', 'end start'],
+  });
+  const active = parallax && !reducedMotion;
+  const y = useTransform(scrollYProgress, [0, 1], active ? ['-6%', '6%'] : ['0%', '0%']);
+
   return (
-    <div className={cn('product-frame relative', aspectClass[aspect], className)}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+    <div ref={frameRef} className={cn('product-frame relative', aspectClass[aspect], className)}>
+      <motion.img
         src={imgSrc}
         alt={alt}
         loading={priority ? 'eager' : 'lazy'}
@@ -55,6 +68,7 @@ export function ProductFrame({
         onError={() => {
           if (imgSrc !== IMAGES.logistics) setImgSrc(IMAGES.logistics);
         }}
+        style={parallax ? { y, scale: 1.14 } : undefined}
         className={cn('h-full w-full', fit === 'contain' ? 'object-contain p-6' : 'object-cover')}
       />
       {children}

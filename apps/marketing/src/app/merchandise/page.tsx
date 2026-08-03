@@ -1,35 +1,35 @@
 import type { Metadata } from 'next';
-import { HeroSection } from '@/components/hero-section';
-import { ProductShowcase } from '@/components/product-showcase';
-import { PageSection } from '@/components/page-section';
-import { InnerCta } from '@/components/inner-cta';
+import { ProductHero } from '@/components/sections/tesla/product-hero';
+import { ShopCatalogue } from '@/components/shop-catalogue';
 import { getSiteContent } from '@/lib/content';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Merchandise',
-  description: 'ChaseHorse official merchandise — apparel and branded gear.',
+  title: 'HSE Shop',
+  description: 'ChaseHorse merchandise, PPE, and branded gear — shop online.',
 };
 
 export default function MerchandisePage() {
-  const products = getSiteContent().products;
+  const products = getSiteContent().products.map((p) => ({
+    ...p,
+    priceValue: p.priceValue ?? (Number(String(p.price).replace(/[^\d.]/g, '')) || 0),
+    category: p.category ?? 'Apparel',
+  }));
 
   return (
     <>
-      <HeroSection
-        title="Merchandise"
-        tagline="Official Store"
-        subtitle="Official ChaseHorse apparel and branded gear."
+      <ProductHero
+        title="HSE Shop"
+        eyebrow="Merchandise & PPE"
+        subtitle="Official ChaseHorse apparel, gear, and safety essentials."
         image={IMAGES.shop}
+        tone="light"
+        primaryCta={{ label: 'Shop now', href: '#catalogue' }}
+        secondaryCta={{ label: 'Track order', href: '/merchandise/track' }}
       />
-      <PageSection variant="white" title="Shop Collection" subtitle="ChaseHorse Gear" reveal={false}>
-        <ProductShowcase products={products} />
-      </PageSection>
-      <InnerCta
-        title="Bulk orders for your team?"
-        href="/contact?subject=Merchandise Bulk Order"
-        buttonLabel="Enquire Now"
-      />
+      <div id="catalogue">
+        <ShopCatalogue products={products} />
+      </div>
     </>
   );
 }

@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from '
 import type { SiteContent } from '@/types/content';
 
 export interface SiteNavigation {
-  header?: { label: string; href: string }[];
+  header?: { label: string; href: string; external?: boolean }[];
 }
 
 export type RuntimeSiteContent = SiteContent & { navigation?: SiteNavigation };

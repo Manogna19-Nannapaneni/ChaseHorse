@@ -8,42 +8,79 @@
       {
         "id": "gelp",
         "title": "Introducing GELP Platform",
-        "subtitle": "Human Interface + Technology + ESG + Market",
+        "subtitle": "Business services, consulting, growth, technology and operations — one LaaS platform",
         "image": "/images/port-hero.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services" }
+        "video": "/videos/hero.mp4",
+        "primaryCta": {
+          "label": "Book Now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Know more",
+          "href": "/platform"
+        },
+        "whatsappCta": {
+          "label": "WhatsApp",
+          "href": "https://wa.me/917337369111",
+          "avatar": "/images/team-meeting.jpg"
+        }
       },
       {
         "id": "tier1",
-        "title": "Tier 1 Strategy Deployment",
-        "subtitle": "Deploy in 24 Hours",
-        "image": "/images/port-yard.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/tier-1" }
-      },
-      {
-        "id": "digital",
-        "title": "Digital Transformation",
-        "subtitle": "End-to-End Logistics Intelligence",
-        "image": "/images/analytics.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/digital-transformation" }
+        "title": "CH Deploy and Digital Transformation",
+        "subtitle": "Tier 1 core services — deploy strategy in 24 hours",
+        "image": "/images/warehouse-scan.jpg",
+        "video": "https://videos.pexels.com/video-files/4486575/4486575-hd_1920_1080_30fps.mp4",
+        "primaryCta": {
+          "label": "Connect now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Know more",
+          "href": "/services/tier-1"
+        },
+        "whatsappCta": {
+          "label": "WhatsApp",
+          "href": "https://wa.me/917337369111",
+          "avatar": "/images/team-meeting.jpg"
+        }
       },
       {
         "id": "fleet",
-        "title": "Fleet Operations",
-        "subtitle": "Truck Deployment & Last Mile Delivery",
+        "title": "Solutions Across Every Vertical",
+        "subtitle": "From field CX to advanced AI, IoT, SCM and governance",
         "image": "/images/trucks-highway.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/fleet-operations" }
+        "video": "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4",
+        "primaryCta": {
+          "label": "Book Now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Know more",
+          "href": "/services"
+        },
+        "whatsappCta": {
+          "label": "WhatsApp",
+          "href": "https://wa.me/917337369111",
+          "avatar": "/images/team-meeting.jpg"
+        }
       }
     ],
     "feature": {
       "title": "Growth Enabler Logiworkx Platform",
       "description": "The GELP platform engineered a paradigm shift by delivering rapid business scalability coupled with immediately accessible plug & play resources. Backed by live market intelligence, flexible finance options, and highly feasible cost models.",
-      "statLabels": ["Countries Covered", "Shipments Delivered"],
-      "primaryCta": { "label": "Schedule Demo", "action": "quote" },
-      "secondaryCta": { "label": "Learn More", "href": "/services" },
+      "statLabels": [
+        "Countries Covered",
+        "Shipments Delivered"
+      ],
+      "primaryCta": {
+        "label": "Schedule Demo",
+        "action": "quote"
+      },
+      "secondaryCta": {
+        "label": "Learn More",
+        "href": "/services"
+      },
       "image": "/images/port-hero.jpg"
     },
     "infoCards": [
@@ -52,7 +89,11 @@
         "description": "Tier 1 strategy deployment with on-field CX leads, PPE compliance, and returns management — ready in 24 hours.",
         "image": "/images/packaging.jpg",
         "ctas": [
-          { "label": "Learn More", "href": "/services/tier-1", "variant": "dark" }
+          {
+            "label": "Learn More",
+            "href": "/services/tier-1",
+            "variant": "dark"
+          }
         ]
       },
       {
@@ -60,8 +101,16 @@
         "description": "Training courses, job opportunities, and merchandise to support your logistics operations team.",
         "image": "/images/warehouse-aisle.jpg",
         "ctas": [
-          { "label": "Courses", "href": "/courses", "variant": "dark" },
-          { "label": "Jobs", "href": "/jobs", "variant": "outline" }
+          {
+            "label": "Courses",
+            "href": "/courses",
+            "variant": "dark"
+          },
+          {
+            "label": "Jobs",
+            "href": "/jobs",
+            "variant": "outline"
+          }
         ]
       }
     ],
@@ -71,24 +120,42 @@
         "title": "ESG Sustainability",
         "subtitle": "Framework setup & sustainability dashboard",
         "image": "/images/wind-turbines.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/esg-sustainability" }
+        "primaryCta": {
+          "label": "Order Now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Learn More",
+          "href": "/services/esg-sustainability"
+        }
       },
       {
         "id": "tier2",
         "title": "Tier 2 Operations Scale",
         "subtitle": "Scale in 48 Hours",
         "image": "/images/warehouse-aisle.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/tier-2" }
+        "primaryCta": {
+          "label": "Order Now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Learn More",
+          "href": "/services/tier-2"
+        }
       },
       {
         "id": "tier3",
         "title": "Tier 3 Advanced Technologies",
         "subtitle": "AI, IoT & Operational Advancement",
         "image": "/images/analytics.jpg",
-        "primaryCta": { "label": "Order Now", "action": "quote" },
-        "secondaryCta": { "label": "Learn More", "href": "/services/tier-3" }
+        "primaryCta": {
+          "label": "Order Now",
+          "action": "quote"
+        },
+        "secondaryCta": {
+          "label": "Learn More",
+          "href": "/services/tier-3"
+        }
       }
     ],
     "sections": [
@@ -108,12 +175,81 @@
         "title": "Why ChaseHorse G.E.L.P?",
         "subtitle": "Value Creation . Futuristic . Practical . One Transparent Platform",
         "stats": [
-          { "label": "Tier 1 Strategy Deployment", "value": "24h" },
-          { "label": "Tier 2 Operations Scale", "value": "48h" }
+          {
+            "label": "Tier 1 Strategy Deployment",
+            "value": "24h"
+          },
+          {
+            "label": "Tier 2 Operations Scale",
+            "value": "48h"
+          }
         ],
         "body": "The Growth Enabler Logiworkx Platform engineered a paradigm shift by delivering rapid business scalability coupled with immediately accessible plug & play resources. Backed by live market intelligence, flexible finance options, and highly feasible cost models."
       }
-    ]
+    ],
+    "summaryLinks": [
+      {
+        "label": "Platform",
+        "href": "/platform"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Discover",
+        "href": "/courses"
+      },
+      {
+        "label": "Customers",
+        "href": "/#customers"
+      },
+      {
+        "label": "Benefits",
+        "href": "/platform#why-gelp"
+      },
+      {
+        "label": "What's next",
+        "href": "/contact"
+      }
+    ],
+    "whatsapp": {
+      "number": "917337369111",
+      "label": "WhatsApp",
+      "avatar": "/images/team-meeting.jpg"
+    },
+    "tierOverview": {
+      "title": "Three Tiers. One Platform.",
+      "description": "ChaseHorse organizes solutions into three connected tiers so you can start with a digital foundation, scale strategically, and advance into enterprise technology — without rebuilding your stack.",
+      "connection": "Tiers connect as a journey: Tier 1 establishes the foundation, Tier 2 scales people and process, Tier 3 layers advanced technology — combine modules across tiers as you grow.",
+      "howToChoose": "Not sure where to start? Use Design Your Solution in the Solutions menu, or talk to our team.",
+      "tiers": [
+        {
+          "tier": 1,
+          "title": "Core Business Services",
+          "subtitle": "Digital foundation",
+          "audience": "Teams establishing digital logistics operations",
+          "description": "Rapid strategy deployment — Digital Transformation, CH Deploy, complaints, PPEs, and returns.",
+          "href": "/services/tier-1"
+        },
+        {
+          "tier": 2,
+          "title": "Strategic and Growth Services",
+          "subtitle": "Scale operations",
+          "audience": "Operators ready to optimize and expand",
+          "description": "Fleet and driver management, ESG, CX, optimization tools, and digital advancement.",
+          "href": "/services/tier-2"
+        },
+        {
+          "tier": 3,
+          "title": "Advanced Ops and Technology",
+          "subtitle": "Enterprise stack",
+          "audience": "Enterprises needing AI, IoT, SCM, and compliance",
+          "description": "IT and advanced technologies, fleet operations, SCM process, sustainability, and governance.",
+          "href": "/services/tier-3"
+        }
+      ]
+    }
   },
   "contact": {
     "slug": "contact",
@@ -149,23 +285,108 @@
     ]
   },
   "services": [
-    { "slug": "digital-transformation", "title": "Digital Transformation", "description": "End-to-end digital transformation for logistics operations.", "tier": 1 },
-    { "slug": "ch-deploy", "title": "CH Deploy", "description": "DEPLOY – Onfield CX Lead deployment and field operations.", "tier": 1 },
-    { "slug": "8d-customer-complaints", "title": "8D Customer Complaints", "description": "Structured complaint management with Ewaybill, stakeholder collaboration, root cause analysis, and KPI tracking.", "tier": 1 },
-    { "slug": "merchandise-ppes", "title": "Merchandise & PPEs", "description": "On-site PPE outlet, HSE compliance checklist, and toolbox talks for safety operations.", "tier": 1 },
-    { "slug": "returns-management", "title": "Returns Management", "description": "Reverse logistics: sales returns, transit damages, quality rejections, pallets/lashing, packing material returns.", "tier": 1 },
-    { "slug": "digital-advancement", "title": "Digital Advancement", "description": "TMS Advanced, Data Science & ML, automations, generic AI, on-job tech training.", "tier": 2 },
-    { "slug": "optimization-tools", "title": "Optimization Tools", "description": "Freight optimization, route/lane rationalization, supplier integration, load/capacity, freight bill authentication.", "tier": 2 },
-    { "slug": "deploy-cdx-pro", "title": "DEPLOY – CDX Pro", "description": "On-field support: technical leads, incident support, training, stock taking, quality testing.", "tier": 2 },
-    { "slug": "fleet-driver-management", "title": "Fleet & Driver Management", "description": "Efficient use, maintenance, planning, and operational readiness of vehicles and drivers.", "tier": 2 },
-    { "slug": "esg-sustainability", "title": "ESG – Sustainability", "description": "Framework setup, basic ESG analytics, tracking methods, sustainability dashboard.", "tier": 2 },
-    { "slug": "customer-xperience-management", "title": "Customer Xperience Management", "description": "CHCX experience measurement, customized checklists, customer and vendor surveys.", "tier": 2 },
-    { "slug": "it-advanced-technologies", "title": "IT & Advanced Technologies", "description": "AI deployment, drone utilization, IoT & automations, data science & ML.", "tier": 3 },
-    { "slug": "operational-advancement", "title": "Operational Advancement", "description": "Advanced operational processes and continuous improvement frameworks.", "tier": 3 },
-    { "slug": "fleet-operations", "title": "Fleet Operations", "description": "Truck deployment, incident management, special express delivery, transhipment.", "tier": 3 },
-    { "slug": "scm-process", "title": "SCM & Process", "description": "Standardizing SCM, market reports, vendor sourcing, forecasting, procurement, storage, network design.", "tier": 3 },
-    { "slug": "sustainability-monitoring", "title": "Sustainability & Monitoring", "description": "Real-time sustainability monitoring and compliance tracking.", "tier": 3 },
-    { "slug": "compliance-governance", "title": "Compliance & Governance", "description": "Regulatory compliance, governance frameworks, and audit management.", "tier": 3 }
+    {
+      "slug": "digital-transformation",
+      "title": "Digital Transformation",
+      "description": "End-to-end digital transformation for logistics operations.",
+      "tier": 1
+    },
+    {
+      "slug": "ch-deploy",
+      "title": "CH Deploy",
+      "description": "DEPLOY – Onfield CX Lead deployment and field operations.",
+      "tier": 1
+    },
+    {
+      "slug": "8d-customer-complaints",
+      "title": "8D Customer Complaints",
+      "description": "Structured complaint management with Ewaybill, stakeholder collaboration, root cause analysis, and KPI tracking.",
+      "tier": 1
+    },
+    {
+      "slug": "merchandise-ppes",
+      "title": "Merchandise & PPEs",
+      "description": "On-site PPE outlet, HSE compliance checklist, and toolbox talks for safety operations.",
+      "tier": 1
+    },
+    {
+      "slug": "returns-management",
+      "title": "Returns Management",
+      "description": "Reverse logistics: sales returns, transit damages, quality rejections, pallets/lashing, packing material returns.",
+      "tier": 1
+    },
+    {
+      "slug": "digital-advancement",
+      "title": "Digital Advancement",
+      "description": "TMS Advanced, Data Science & ML, automations, generic AI, on-job tech training.",
+      "tier": 2
+    },
+    {
+      "slug": "optimization-tools",
+      "title": "Optimization Tools",
+      "description": "Freight optimization, route/lane rationalization, supplier integration, load/capacity, freight bill authentication.",
+      "tier": 2
+    },
+    {
+      "slug": "deploy-cdx-pro",
+      "title": "DEPLOY – CDX Pro",
+      "description": "On-field support: technical leads, incident support, training, stock taking, quality testing.",
+      "tier": 2
+    },
+    {
+      "slug": "fleet-driver-management",
+      "title": "Fleet & Driver Management",
+      "description": "Efficient use, maintenance, planning, and operational readiness of vehicles and drivers.",
+      "tier": 2
+    },
+    {
+      "slug": "esg-sustainability",
+      "title": "ESG – Sustainability",
+      "description": "Framework setup, basic ESG analytics, tracking methods, sustainability dashboard.",
+      "tier": 2
+    },
+    {
+      "slug": "customer-xperience-management",
+      "title": "Customer Xperience Management",
+      "description": "CHCX experience measurement, customized checklists, customer and vendor surveys.",
+      "tier": 2
+    },
+    {
+      "slug": "it-advanced-technologies",
+      "title": "IT & Advanced Technologies",
+      "description": "AI deployment, drone utilization, IoT & automations, data science & ML.",
+      "tier": 3
+    },
+    {
+      "slug": "operational-advancement",
+      "title": "Operational Advancement",
+      "description": "Advanced operational processes and continuous improvement frameworks.",
+      "tier": 3
+    },
+    {
+      "slug": "fleet-operations",
+      "title": "Fleet Operations",
+      "description": "Truck deployment, incident management, special express delivery, transhipment.",
+      "tier": 3
+    },
+    {
+      "slug": "scm-process",
+      "title": "SCM & Process",
+      "description": "Standardizing SCM, market reports, vendor sourcing, forecasting, procurement, storage, network design.",
+      "tier": 3
+    },
+    {
+      "slug": "sustainability-monitoring",
+      "title": "Sustainability & Monitoring",
+      "description": "Real-time sustainability monitoring and compliance tracking.",
+      "tier": 3
+    },
+    {
+      "slug": "compliance-governance",
+      "title": "Compliance & Governance",
+      "description": "Regulatory compliance, governance frameworks, and audit management.",
+      "tier": 3
+    }
   ],
   "products": [
     {
@@ -174,8 +395,22 @@
       "price": "₹ 599.00",
       "description": "Premium ChaseHorse merchandise. Colors: blue, green, red, light pink. Sizes XS–XXL.",
       "image": "/images/travel-bag.jpg",
-      "colors": ["blue", "green", "red", "light pink"],
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "colors": [
+        "blue",
+        "green",
+        "red",
+        "light pink"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "priceValue": 599,
+      "category": "Apparel"
     },
     {
       "slug": "instinct",
@@ -183,8 +418,22 @@
       "price": "₹ 499.00",
       "description": "ChaseHorse Instinct collection. Colors: lavender, peach, cream, green.",
       "image": "/images/packaging.jpg",
-      "colors": ["lavender", "peach", "cream", "green"],
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "colors": [
+        "lavender",
+        "peach",
+        "cream",
+        "green"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "priceValue": 499,
+      "category": "Apparel"
     },
     {
       "slug": "chasehorse-logo",
@@ -192,8 +441,22 @@
       "price": "₹ 499.00",
       "description": "Official ChaseHorse logo merchandise.",
       "image": "/images/analytics.jpg",
-      "colors": ["blue", "black", "green", "red"],
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "colors": [
+        "blue",
+        "black",
+        "green",
+        "red"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "priceValue": 499,
+      "category": "Apparel"
     },
     {
       "slug": "dragon",
@@ -201,8 +464,22 @@
       "price": "₹ 499.00",
       "description": "Dragon collection ChaseHorse apparel.",
       "image": "/images/industrial-night.jpg",
-      "colors": ["blue", "black", "green", "red"],
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "colors": [
+        "blue",
+        "black",
+        "green",
+        "red"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "priceValue": 499,
+      "category": "Apparel"
     }
   ],
   "courses": [
@@ -230,9 +507,21 @@
         {
           "type": "modules",
           "modules": [
-            { "number": "01", "title": "Accessories Driver/Trucks", "body": "Meticulously manages and monitors all vital vehicle-mounted equipment and auxiliary driver kits essential for secure, compliant road operations." },
-            { "number": "02", "title": "Maintenance", "body": "Governs vehicle lifecycle performance by transforming reactive repair cycles into an organized, proactive machine-readiness structure." },
-            { "number": "03", "title": "Planning & Scheduling", "body": "Coordinates structural fleet allocations, driving regulations, freight profiles, and time windows into highly efficient freight dispatch movements." }
+            {
+              "number": "01",
+              "title": "Accessories Driver/Trucks",
+              "body": "Meticulously manages and monitors all vital vehicle-mounted equipment and auxiliary driver kits essential for secure, compliant road operations."
+            },
+            {
+              "number": "02",
+              "title": "Maintenance",
+              "body": "Governs vehicle lifecycle performance by transforming reactive repair cycles into an organized, proactive machine-readiness structure."
+            },
+            {
+              "number": "03",
+              "title": "Planning & Scheduling",
+              "body": "Coordinates structural fleet allocations, driving regulations, freight profiles, and time windows into highly efficient freight dispatch movements."
+            }
           ]
         },
         {
@@ -252,112 +541,208 @@
       "title": "8D Customer Complaints",
       "description": "Structured complaint management with root cause analysis and KPI tracking.",
       "heroImage": "/images/support.jpg",
-      "sections": [{ "type": "text", "title": "8D Customer Complaints", "body": "Structured complaint management: Ewaybill, stakeholder collaboration, time-based closure, root cause analysis, CX linkage, KPI tracker." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "8D Customer Complaints",
+          "body": "Structured complaint management: Ewaybill, stakeholder collaboration, time-based closure, root cause analysis, CX linkage, KPI tracker."
+        }
+      ]
     },
     "merchandise-ppes": {
       "slug": "merchandise-ppes",
       "title": "Merchandise & PPEs",
       "description": "PPE and safety equipment management for logistics operations.",
       "heroImage": "/images/packaging.jpg",
-      "sections": [{ "type": "text", "title": "Merchandise & PPEs", "body": "On-site PPE outlet, HSE compliance checklist, toolbox talks for operational safety." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Merchandise & PPEs",
+          "body": "On-site PPE outlet, HSE compliance checklist, toolbox talks for operational safety."
+        }
+      ]
     },
     "returns-management": {
       "slug": "returns-management",
       "title": "Returns Management",
       "description": "Reverse logistics and returns processing.",
       "heroImage": "/images/packaging.jpg",
-      "sections": [{ "type": "text", "title": "Returns Management", "body": "Sales returns, transit damages, quality rejections, pallets/lashing, packing material returns." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Returns Management",
+          "body": "Sales returns, transit damages, quality rejections, pallets/lashing, packing material returns."
+        }
+      ]
     },
     "digital-transformation": {
       "slug": "digital-transformation",
       "title": "Digital Transformation",
       "description": "End-to-end digital transformation for logistics.",
       "heroImage": "/images/analytics.jpg",
-      "sections": [{ "type": "text", "title": "Digital Transformation", "body": "Transform your logistics operations with end-to-end digital capabilities, integrated systems, and deployment-ready technology stacks." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Digital Transformation",
+          "body": "Transform your logistics operations with end-to-end digital capabilities, integrated systems, and deployment-ready technology stacks."
+        }
+      ]
     },
     "ch-deploy": {
       "slug": "ch-deploy",
       "title": "CH Deploy",
       "description": "DEPLOY – Onfield CX Lead deployment.",
       "heroImage": "/images/warehouse-scan.jpg",
-      "sections": [{ "type": "text", "title": "CH Deploy", "body": "DEPLOY – Onfield CX Lead: rapid field deployment, customer experience leadership, and on-ground operational excellence." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "CH Deploy",
+          "body": "DEPLOY – Onfield CX Lead: rapid field deployment, customer experience leadership, and on-ground operational excellence."
+        }
+      ]
     },
     "digital-advancement": {
       "slug": "digital-advancement",
       "title": "Digital Advancement",
       "description": "TMS, AI, ML, and automation for logistics.",
       "heroImage": "/images/analytics.jpg",
-      "sections": [{ "type": "text", "title": "Digital Advancement", "body": "TMS Advanced, Data Science & ML, automations, generic AI, on-job tech training." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Digital Advancement",
+          "body": "TMS Advanced, Data Science & ML, automations, generic AI, on-job tech training."
+        }
+      ]
     },
     "optimization-tools": {
       "slug": "optimization-tools",
       "title": "Optimization Tools",
       "description": "Freight and route optimization tools.",
       "heroImage": "/images/analytics.jpg",
-      "sections": [{ "type": "text", "title": "Optimization Tools", "body": "Freight optimization, route/lane rationalization, supplier integration, load/capacity, freight bill authentication." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Optimization Tools",
+          "body": "Freight optimization, route/lane rationalization, supplier integration, load/capacity, freight bill authentication."
+        }
+      ]
     },
     "deploy-cdx-pro": {
       "slug": "deploy-cdx-pro",
       "title": "DEPLOY – CDX Pro",
       "description": "On-field technical support and quality testing.",
       "heroImage": "/images/last-mile.jpg",
-      "sections": [{ "type": "text", "title": "DEPLOY – CDX Pro", "body": "On-field support: technical leads, incident support, training, stock taking, quality testing." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "DEPLOY – CDX Pro",
+          "body": "On-field support: technical leads, incident support, training, stock taking, quality testing."
+        }
+      ]
     },
     "esg-sustainability": {
       "slug": "esg-sustainability",
       "title": "ESG – Sustainability",
       "description": "ESG framework and sustainability analytics.",
       "heroImage": "/images/wind-turbines.jpg",
-      "sections": [{ "type": "text", "title": "ESG – Sustainability", "body": "Framework setup, basic ESG analytics, tracking methods, sustainability dashboard." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "ESG – Sustainability",
+          "body": "Framework setup, basic ESG analytics, tracking methods, sustainability dashboard."
+        }
+      ]
     },
     "customer-xperience-management": {
       "slug": "customer-xperience-management",
       "title": "Customer Xperience Management",
       "description": "Customer experience measurement and surveys.",
       "heroImage": "/images/support.jpg",
-      "sections": [{ "type": "text", "title": "Customer Xperience Management", "body": "CHCX experience measurement, customized checklists, customer surveys, vendor surveys." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Customer Xperience Management",
+          "body": "CHCX experience measurement, customized checklists, customer surveys, vendor surveys."
+        }
+      ]
     },
     "it-advanced-technologies": {
       "slug": "it-advanced-technologies",
       "title": "IT & Advanced Technologies",
       "description": "AI, drones, IoT for logistics.",
       "heroImage": "/images/industrial-night.jpg",
-      "sections": [{ "type": "text", "title": "IT & Advanced Technologies", "body": "AI deployment, drone utilization, IoT & automations, data science & ML." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "IT & Advanced Technologies",
+          "body": "AI deployment, drone utilization, IoT & automations, data science & ML."
+        }
+      ]
     },
     "operational-advancement": {
       "slug": "operational-advancement",
       "title": "Operational Advancement",
       "description": "Advanced operational processes and improvement.",
       "heroImage": "/images/industrial-plant.jpg",
-      "sections": [{ "type": "text", "title": "Operational Advancement", "body": "Advanced operational processes, continuous improvement frameworks, and scalable operations management." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Operational Advancement",
+          "body": "Advanced operational processes, continuous improvement frameworks, and scalable operations management."
+        }
+      ]
     },
     "fleet-operations": {
       "slug": "fleet-operations",
       "title": "Fleet Operations",
       "description": "Truck deployment and express delivery operations.",
       "heroImage": "/images/truck-mountain.jpg",
-      "sections": [{ "type": "text", "title": "Fleet Operations", "body": "Truck deployment, incident management, special express delivery, transhipment." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Fleet Operations",
+          "body": "Truck deployment, incident management, special express delivery, transhipment."
+        }
+      ]
     },
     "scm-process": {
       "slug": "scm-process",
       "title": "SCM & Process",
       "description": "Supply chain management and process standardization.",
       "heroImage": "/images/port-yard.jpg",
-      "sections": [{ "type": "text", "title": "SCM & Process", "body": "Standardizing SCM, market reports, vendor sourcing, forecasting, procurement, storage, network design." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "SCM & Process",
+          "body": "Standardizing SCM, market reports, vendor sourcing, forecasting, procurement, storage, network design."
+        }
+      ]
     },
     "sustainability-monitoring": {
       "slug": "sustainability-monitoring",
       "title": "Sustainability & Monitoring",
       "description": "Real-time sustainability monitoring.",
       "heroImage": "/images/wind-turbines.jpg",
-      "sections": [{ "type": "text", "title": "Sustainability & Monitoring", "body": "Real-time sustainability monitoring, environmental compliance tracking, and ESG reporting." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Sustainability & Monitoring",
+          "body": "Real-time sustainability monitoring, environmental compliance tracking, and ESG reporting."
+        }
+      ]
     },
     "compliance-governance": {
       "slug": "compliance-governance",
       "title": "Compliance & Governance",
       "description": "Regulatory compliance and governance frameworks.",
       "heroImage": "/images/containers.jpg",
-      "sections": [{ "type": "text", "title": "Compliance & Governance", "body": "Regulatory compliance, governance frameworks, audit management, and policy adherence." }]
+      "sections": [
+        {
+          "type": "text",
+          "title": "Compliance & Governance",
+          "body": "Regulatory compliance, governance frameworks, audit management, and policy adherence."
+        }
+      ]
     }
   },
   "testimonials": [
@@ -387,16 +772,37 @@
     }
   ],
   "clients": [
-    { "name": "Demo Couriers" },
-    { "name": "FastTrack" },
-    { "name": "PAN India Transport" },
-    { "name": "Regional Logistics" },
-    { "name": "GreenFleet" },
-    { "name": "Metro SCM" },
-    { "name": "SwiftHaul" },
-    { "name": "LogiCore" }
+    {
+      "name": "Demo Couriers"
+    },
+    {
+      "name": "FastTrack"
+    },
+    {
+      "name": "PAN India Transport"
+    },
+    {
+      "name": "Regional Logistics"
+    },
+    {
+      "name": "GreenFleet"
+    },
+    {
+      "name": "Metro SCM"
+    },
+    {
+      "name": "SwiftHaul"
+    },
+    {
+      "name": "LogiCore"
+    }
   ],
-  "globalPresence": ["India", "UAE", "Saudi Arabia", "Singapore"],
+  "globalPresence": [
+    "India",
+    "UAE",
+    "Saudi Arabia",
+    "Singapore"
+  ],
   "faqs": [
     {
       "question": "What is ChaseHorse GELP?",
@@ -436,59 +842,171 @@
       "title": "Core Business",
       "subtitle": "Tier 1 — Digital Foundation",
       "items": [
-        { "title": "Digital Transformation", "slug": "digital-transformation", "href": "/services/digital-transformation" },
-        { "title": "CH Deploy", "slug": "ch-deploy", "href": "/services/ch-deploy" },
-        { "title": "8D Customer Complaints", "slug": "8d-customer-complaints", "href": "/services/8d-customer-complaints" },
-        { "title": "Merchandise & PPEs", "slug": "merchandise-ppes", "href": "/services/merchandise-ppes" },
-        { "title": "Returns Management", "slug": "returns-management", "href": "/services/returns-management" }
+        {
+          "title": "Digital Transformation",
+          "slug": "digital-transformation",
+          "href": "/services/digital-transformation"
+        },
+        {
+          "title": "CH Deploy",
+          "slug": "ch-deploy",
+          "href": "/services/ch-deploy"
+        },
+        {
+          "title": "8D Customer Complaints",
+          "slug": "8d-customer-complaints",
+          "href": "/services/8d-customer-complaints"
+        },
+        {
+          "title": "Merchandise & PPEs",
+          "slug": "merchandise-ppes",
+          "href": "/services/merchandise-ppes"
+        },
+        {
+          "title": "Returns Management",
+          "slug": "returns-management",
+          "href": "/services/returns-management"
+        }
       ]
     },
     {
       "title": "Strategic Growth",
       "subtitle": "Tier 2 — Scale Operations",
       "items": [
-        { "title": "Digital Advancement", "slug": "digital-advancement", "href": "/services/digital-advancement" },
-        { "title": "Optimization Tools", "slug": "optimization-tools", "href": "/services/optimization-tools" },
-        { "title": "Fleet & Driver Management", "slug": "fleet-driver-management", "href": "/services/fleet-driver-management" },
-        { "title": "ESG Sustainability", "slug": "esg-sustainability", "href": "/services/esg-sustainability" },
-        { "title": "Customer Xperience", "slug": "customer-xperience-management", "href": "/services/customer-xperience-management" }
+        {
+          "title": "Digital Advancement",
+          "slug": "digital-advancement",
+          "href": "/services/digital-advancement"
+        },
+        {
+          "title": "Optimization Tools",
+          "slug": "optimization-tools",
+          "href": "/services/optimization-tools"
+        },
+        {
+          "title": "Fleet & Driver Management",
+          "slug": "fleet-driver-management",
+          "href": "/services/fleet-driver-management"
+        },
+        {
+          "title": "ESG Sustainability",
+          "slug": "esg-sustainability",
+          "href": "/services/esg-sustainability"
+        },
+        {
+          "title": "Customer Xperience",
+          "slug": "customer-xperience-management",
+          "href": "/services/customer-xperience-management"
+        }
       ]
     },
     {
       "title": "Advanced Tech",
       "subtitle": "Tier 3 — Enterprise Operations",
       "items": [
-        { "title": "IT & Advanced Technologies", "slug": "it-advanced-technologies", "href": "/services/it-advanced-technologies" },
-        { "title": "Fleet Operations", "slug": "fleet-operations", "href": "/services/fleet-operations" },
-        { "title": "SCM & Process", "slug": "scm-process", "href": "/services/scm-process" },
-        { "title": "Compliance & Governance", "slug": "compliance-governance", "href": "/services/compliance-governance" },
-        { "title": "Sustainability Monitoring", "slug": "sustainability-monitoring", "href": "/services/sustainability-monitoring" }
+        {
+          "title": "IT & Advanced Technologies",
+          "slug": "it-advanced-technologies",
+          "href": "/services/it-advanced-technologies"
+        },
+        {
+          "title": "Fleet Operations",
+          "slug": "fleet-operations",
+          "href": "/services/fleet-operations"
+        },
+        {
+          "title": "SCM & Process",
+          "slug": "scm-process",
+          "href": "/services/scm-process"
+        },
+        {
+          "title": "Compliance & Governance",
+          "slug": "compliance-governance",
+          "href": "/services/compliance-governance"
+        },
+        {
+          "title": "Sustainability Monitoring",
+          "slug": "sustainability-monitoring",
+          "href": "/services/sustainability-monitoring"
+        }
       ]
     },
     {
       "title": "Platform & Training",
       "subtitle": "Ecosystem Services",
       "items": [
-        { "title": "Warehouse Basics Training", "slug": "warehouse-basics-training", "href": "/courses/warehouse-basics-training" },
-        { "title": "Job Opportunities", "slug": "jobs", "href": "/jobs" },
-        { "title": "Merchandise", "slug": "merchandise", "href": "/merchandise" },
-        { "title": "Contact Us", "slug": "contact", "href": "/contact" },
-        { "title": "All Services", "slug": "services", "href": "/services" }
+        {
+          "title": "Warehouse Basics Training",
+          "slug": "warehouse-basics-training",
+          "href": "/courses/warehouse-basics-training"
+        },
+        {
+          "title": "Job Opportunities",
+          "slug": "jobs",
+          "href": "/jobs"
+        },
+        {
+          "title": "Merchandise",
+          "slug": "merchandise",
+          "href": "/merchandise"
+        },
+        {
+          "title": "Contact Us",
+          "slug": "contact",
+          "href": "/contact"
+        },
+        {
+          "title": "All Services",
+          "slug": "services",
+          "href": "/services"
+        }
       ]
     }
   ],
   "homepageStats": [
-    { "value": "120+", "label": "Countries Covered", "icon": "globe" },
-    { "value": "50K+", "label": "Shipments Delivered", "icon": "package" },
-    { "value": "500+", "label": "Satisfied Clients", "icon": "users" },
-    { "value": "1M+", "label": "Sq. Ft. Warehouse Space", "icon": "warehouse" },
-    { "value": "24/7", "label": "Support", "icon": "headset" }
+    {
+      "value": "120+",
+      "label": "Countries Covered",
+      "icon": "globe"
+    },
+    {
+      "value": "50K+",
+      "label": "Shipments Delivered",
+      "icon": "package"
+    },
+    {
+      "value": "500+",
+      "label": "Satisfied Clients",
+      "icon": "users"
+    },
+    {
+      "value": "1M+",
+      "label": "Sq. Ft. Warehouse Space",
+      "icon": "warehouse"
+    },
+    {
+      "value": "24/7",
+      "label": "Support",
+      "icon": "headset"
+    }
   ],
   "networkStats": [
-    { "value": "6", "label": "Continents" },
-    { "value": "120+", "label": "Countries" },
-    { "value": "300+", "label": "Global Partners" },
-    { "value": "1000+", "label": "Expert Employees" }
+    {
+      "value": "6",
+      "label": "Continents"
+    },
+    {
+      "value": "120+",
+      "label": "Countries"
+    },
+    {
+      "value": "300+",
+      "label": "Global Partners"
+    },
+    {
+      "value": "1000+",
+      "label": "Expert Employees"
+    }
   ],
   "networkBullets": [
     "Strategic Global Network",
@@ -552,5 +1070,214 @@
       "date": "March 8, 2024",
       "image": "/images/wind-turbines.jpg"
     }
-  ]
+  ],
+  "navigation": {
+    "header": [
+      {
+        "label": "Platform",
+        "href": "/platform"
+      },
+      {
+        "label": "Solutions",
+        "href": "/services"
+      },
+      {
+        "label": "Live Market",
+        "href": "/live-market"
+      },
+      {
+        "label": "Discover",
+        "href": "/courses"
+      },
+      {
+        "label": "HSE Shop",
+        "href": "/merchandise"
+      },
+      {
+        "label": "Partners",
+        "href": "/partners"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partner with ChaseHorse",
+    "description": "Apply via our partner form or join the WhatsApp group for direct access.",
+    "formUrl": "https://forms.gle/QmiddiuRkaRLbesEA",
+    "whatsappUrl": "https://wa.me/917337369111",
+    "whatsappLabel": "Join WhatsApp Group"
+  },
+  "liveMarket": {
+    "title": "Live Market Intelligence",
+    "description": "Market signals, industry insights, and GELP intelligence for decision-makers.",
+    "cards": [
+      {
+        "title": "How Global Supply Chains are Evolving in 2024",
+        "body": "May 20, 2024",
+        "href": "/live-market#global-supply-chains-2024",
+        "image": "/images/port-yard.jpg"
+      },
+      {
+        "title": "The Role of Technology in Modern Logistics",
+        "body": "April 15, 2024",
+        "href": "/live-market#technology-logistics",
+        "image": "/images/analytics.jpg"
+      },
+      {
+        "title": "Sustainability in Logistics: Building a Greener Future",
+        "body": "March 8, 2024",
+        "href": "/live-market#sustainable-logistics",
+        "image": "/images/wind-turbines.jpg"
+      }
+    ]
+  },
+  "platform": {
+    "slug": "platform",
+    "title": "Growth Enabler Logiworkx Platform",
+    "description": "Human Interface + Technology + ESG-Sustainability + Market",
+    "heroImage": "/images/port-hero.jpg",
+    "sections": []
+  },
+  "designSolution": {
+    "currency": "INR",
+    "loginArtUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
+    "menuThumbs": {
+      "platform": "/images/team-meeting.jpg",
+      "solutions": "/images/warehouse-scan.jpg",
+      "liveMarket": "/images/port-hero.jpg",
+      "discover": "/images/digital-transformation.jpg",
+      "shop": "/images/ppe-kit.jpg"
+    },
+    "tiers": [
+      {
+        "tier": 1,
+        "title": "TIER 1 → CORE BUSINESS",
+        "groups": [
+          {
+            "id": "digital-transformation",
+            "label": "Digital Transformation",
+            "href": "/services/digital-transformation",
+            "children": [
+              {
+                "id": "t1-tms",
+                "label": "Transport Management System (TMS)",
+                "priceValue": 42000
+              },
+              {
+                "id": "t1-proc",
+                "label": "Online Procurement",
+                "priceValue": 18000
+              },
+              {
+                "id": "t1-rfq",
+                "label": "Contracts – RFQ & Approvals",
+                "priceValue": 15000
+              },
+              {
+                "id": "t1-icv",
+                "label": "Inward Consignment Visibility",
+                "priceValue": 12000
+              },
+              {
+                "id": "t1-mis",
+                "label": "Data Analytics – MIS",
+                "priceValue": 20000
+              }
+            ]
+          },
+          {
+            "id": "ch-deploy",
+            "label": "CH Deploy",
+            "href": "/services/ch-deploy",
+            "children": [
+              {
+                "id": "t1-wh",
+                "label": "Warehouse Inspection",
+                "priceValue": 12500
+              },
+              {
+                "id": "t1-unload",
+                "label": "Unloading Site Monitoring",
+                "priceValue": 12500
+              },
+              {
+                "id": "t1-load",
+                "label": "Loading Site Monitoring",
+                "priceValue": 12500
+              },
+              {
+                "id": "t1-3pl",
+                "label": "Audits at 3PL Warehouses",
+                "priceValue": 29000
+              },
+              {
+                "id": "t1-gst",
+                "label": "GST Office Coordination",
+                "priceValue": 16500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": 2,
+        "title": "TIER 2 → STRATEGIC & GROWTH",
+        "groups": [
+          {
+            "id": "digital-advancement",
+            "label": "Digital Advancement",
+            "href": "/services/digital-advancement",
+            "children": [
+              {
+                "id": "t2-tms",
+                "label": "TMS Advanced",
+                "priceValue": 35000
+              },
+              {
+                "id": "t2-ml",
+                "label": "Data Science & Machine Learning",
+                "priceValue": 45000
+              },
+              {
+                "id": "t2-auto",
+                "label": "Automations",
+                "priceValue": 28000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": 3,
+        "title": "TIER 3 → ADVANCED TECH",
+        "groups": [
+          {
+            "id": "it-advanced-technologies",
+            "label": "IT & Advanced Tech",
+            "href": "/services/it-advanced-technologies",
+            "children": [
+              {
+                "id": "t3-ai",
+                "label": "AI Deployment",
+                "priceValue": 55000
+              },
+              {
+                "id": "t3-drone",
+                "label": "Drone Utilization",
+                "priceValue": 48000
+              },
+              {
+                "id": "t3-iot",
+                "label": "IoT & Automations",
+                "priceValue": 42000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "login": {
+    "artUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
+    "tagline": "Logistics intelligence for every mile of your supply chain."
+  }
 }

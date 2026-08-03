@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'leaflet/dist/leaflet.css';
 
 @layer base {
   :root {
@@ -48,7 +49,7 @@
   }
 
   .btn-tesla-secondary {
-    @apply inline-flex h-10 min-w-[256px] max-w-[480px] flex-1 items-center justify-center rounded-[4px] bg-white/65 px-6 text-[14px] font-medium text-tesla-black backdrop-blur-sm transition-colors duration-200 hover:bg-white/80 sm:flex-none;
+    @apply inline-flex h-10 min-w-[256px] max-w-[480px] flex-1 items-center justify-center rounded-[4px] bg-white px-6 text-[14px] font-medium text-[#171a20] transition-colors duration-200 hover:bg-white/90 sm:flex-none;
   }
 
   .btn-tesla-secondary-dark {
@@ -64,7 +65,7 @@
   }
 
   .tesla-cta-row {
-    @apply flex w-full max-w-[640px] flex-col items-center gap-5 sm:flex-row sm:justify-center;
+    @apply flex w-full max-w-[640px] flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6;
   }
 
   .tesla-hero-title {

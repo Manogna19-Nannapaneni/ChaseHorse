@@ -95,6 +95,8 @@ const HOME_SLIDE_IMAGES: Record<string, string> = {
   tier1: L('warehouse-scan'),
   digital: L('analytics'),
   fleet: L('trucks-highway'),
+  network: L('port-aerial'),
+  supplychain: L('ship-aerial'),
   esg: L('wind-turbines'),
   tier2: L('ship-sunset'),
   tier3: L('port-topdown'),

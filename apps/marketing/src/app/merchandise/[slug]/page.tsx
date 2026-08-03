@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ProductDetail } from '@/components/product-detail';
-import { InnerCta } from '@/components/inner-cta';
 import { getProduct } from '@/lib/content';
 
 export async function generateStaticParams() {
@@ -27,15 +26,5 @@ export default async function ProductPage({
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
-
-  return (
-    <>
-      <ProductDetail product={product} />
-      <InnerCta
-        title="Need help choosing?"
-        href={`/contact?product=${product.slug}&subject=Merchandise Enquiry: ${encodeURIComponent(product.name)}`}
-        buttonLabel="Contact Sales"
-      />
-    </>
-  );
+  return <ProductDetail product={product} />;
 }

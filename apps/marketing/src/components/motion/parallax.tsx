@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, type ReactNode } from 'react';
-import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 interface ParallaxProps {
@@ -13,28 +13,33 @@ interface ParallaxProps {
 
 /**
  * Subtle scroll-driven parallax. The inner layer is intentionally oversized so
- * the vertical drift never reveals an empty edge. Disabled under reduced motion.
+ * the vertical drift never reveals an empty edge.
+ *
+ * Always renders the same motion.div on server and client — branching the
+ * element type on useReducedMotion() (client-only) causes a hydration
+ * mismatch that can leave content stuck mid-transform. Reduced motion is
+ * instead handled globally via <MotionConfig reducedMotion="user">, which
+ * clamps the drift to near-zero without changing the DOM shape.
  */
 export function Parallax({ children, className, strength = 60 }: ParallaxProps) {
   const ref = useRef<HTMLDivElement>(null);
+  // Safe to read post-hydration: it only scales a numeric transform input,
+  // it never changes which elements get rendered.
   const reducedMotion = useReducedMotion();
+  const effectiveStrength = reducedMotion ? 0 : strength;
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-strength, strength]);
+  const y = useTransform(scrollYProgress, [0, 1], [-effectiveStrength, effectiveStrength]);
 
   return (
     <div ref={ref} className={cn('relative overflow-hidden', className)}>
-      {reducedMotion ? (
-        <div className="absolute inset-0">{children}</div>
-      ) : (
-        <motion.div style={{ y }} className="absolute -inset-y-[12%] inset-x-0">
-          {children}
-        </motion.div>
-      )}
+      <motion.div style={{ y }} className="absolute -inset-y-[12%] inset-x-0">
+        {children}
+      </motion.div>
     </div>
   );
 }

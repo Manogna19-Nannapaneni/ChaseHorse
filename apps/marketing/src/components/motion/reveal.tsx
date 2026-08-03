@@ -1,7 +1,8 @@
 'use client';
 
-import { motion, useReducedMotion, type HTMLMotionProps, type Variants } from 'framer-motion';
+import { motion, type HTMLMotionProps, type Variants } from 'framer-motion';
 import type { ReactNode } from 'react';
+import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
 const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 
@@ -58,19 +59,26 @@ export function Reveal({
   direction = 'fadeUp',
   once = true,
 }: RevealProps) {
-  const reducedMotion = useReducedMotion();
-
-  if (reducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
+  // Always render the same motion.div on server and client — branching on
+  // useReducedMotion() (which can only resolve on the client) causes a
+  // hydration mismatch that leaves the server-rendered `hidden` variant
+  // (opacity: 0) stuck in the DOM forever. Reduced-motion is instead handled
+  // globally via <MotionConfig reducedMotion="user"> in smooth-scroll.tsx,
+  // which collapses these transitions to near-instant without hiding content.
+  //
+  // Visibility is driven by useScrollReveal (real scroll-position geometry)
+  // rather than `whileInView`, whose IntersectionObserver recalculation can be
+  // unreliable after programmatic/smooth scrolling and leave content stuck
+  // hidden — see use-scroll-reveal.ts for details.
+  const { ref, inView } = useScrollReveal<HTMLDivElement>({ margin: 80, once });
 
   return (
     <motion.div
+      ref={ref}
       className={className}
       variants={variantMap[direction]}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once, margin: '-80px' }}
+      animate={inView ? 'show' : 'hidden'}
       transition={{ duration: 0.7, delay, ease: EASE }}
     >
       {children}
@@ -85,19 +93,15 @@ interface RevealStaggerProps extends Omit<HTMLMotionProps<'div'>, 'children'> {
 }
 
 export function RevealStagger({ children, className, once = true, ...props }: RevealStaggerProps) {
-  const reducedMotion = useReducedMotion();
-
-  if (reducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
+  const { ref, inView } = useScrollReveal<HTMLDivElement>({ margin: 40, once });
 
   return (
     <motion.div
+      ref={ref}
       className={className}
       variants={staggerContainer}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once, margin: '-40px' }}
+      animate={inView ? 'show' : 'hidden'}
       {...props}
     >
       {children}
@@ -113,12 +117,6 @@ export function RevealItem({
   children: ReactNode;
   className?: string;
 } & HTMLMotionProps<'div'>) {
-  const reducedMotion = useReducedMotion();
-
-  if (reducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
   return (
     <motion.div className={className} variants={staggerItem} {...props}>
       {children}

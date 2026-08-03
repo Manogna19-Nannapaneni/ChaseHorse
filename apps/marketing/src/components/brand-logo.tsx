@@ -15,7 +15,7 @@ export function BrandLogo({
     return (
       <span
         className={cn(
-          'text-[17px] font-medium uppercase tracking-[0.15em]',
+          'text-[22px] font-semibold uppercase tracking-[0.06em] sm:text-[24px]',
           textColor,
           className,
         )}

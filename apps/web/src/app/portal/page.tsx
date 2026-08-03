@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AccountTilesGrid, PORTAL_ACCOUNT_TILES } from '@/components/account-tiles';
 import { api, useAuthStore } from '@chasehorse/auth-client';
 import { SHIPMENT_STATUS_LABELS } from '@chasehorse/shared';
 
@@ -91,7 +92,9 @@ function PortalContent() {
 
   return (
     <div>
-      <PageHeader title="Book a Shipment" description="Schedule a pickup and delivery" />
+      <PageHeader title="My account" description="Welcome back — manage bookings, courses, and billing" />
+      <AccountTilesGrid tiles={PORTAL_ACCOUNT_TILES} />
+      <h2 className="mb-4 text-lg font-semibold">Book a Shipment</h2>
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="border-border">
           <CardHeader><CardTitle>New Shipment</CardTitle></CardHeader>

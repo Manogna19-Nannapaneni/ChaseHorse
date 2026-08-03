@@ -3,6 +3,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { AuthGuard } from '@/components/auth/auth-guard';
 import { KpiCard, PageHeader } from '@/components/dashboard/kpi-card';
+import { AccountTilesGrid, COMPANY_ACCOUNT_TILES } from '@/components/account-tiles';
 import { api, useAuthStore } from '@chasehorse/auth-client';
 import { Package, TrendingUp, Users, AlertTriangle } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -28,7 +29,8 @@ function CompanyDashboardContent() {
 
   return (
     <div>
-      <PageHeader title="Company Dashboard" description="Your logistics operations at a glance" />
+      <PageHeader title="My account" description="Your logistics operations at a glance" />
+      <AccountTilesGrid tiles={COMPANY_ACCOUNT_TILES} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <KpiCard title="Daily Deliveries" value={kpis?.dailyDeliveries ?? 0} icon={Package} />
         <KpiCard title="Revenue" value={`₹${(kpis?.revenue ?? 0).toLocaleString()}`} icon={TrendingUp} />

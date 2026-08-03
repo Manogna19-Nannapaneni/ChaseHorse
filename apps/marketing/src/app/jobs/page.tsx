@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import { HeroSection } from '@/components/hero-section';
+import { ProductHero } from '@/components/sections/tesla/product-hero';
+import { ProductOrderCta } from '@/components/sections/tesla/product-order-cta';
 import { JobListing } from '@/components/job-listing';
-import { PageSection } from '@/components/page-section';
-import { InnerCta } from '@/components/inner-cta';
 import { getSiteContent } from '@/lib/content';
 import { IMAGES } from '@/lib/images';
 
@@ -16,25 +15,33 @@ export default function JobsPage() {
 
   return (
     <>
-      <HeroSection
-        title="Our Job Opportunities"
-        tagline="Careers"
-        subtitle="Join a team building the future of logistics technology."
+      <ProductHero
+        title="Careers"
+        eyebrow="Join ChaseHorse"
+        subtitle="Build the future of logistics technology with us."
         image={IMAGES.jobs}
+        tone="light"
+        primaryCta={{ label: 'Apply Now', href: '/contact?subject=Job Application' }}
+        secondaryCta={{ label: 'Contact', href: '/contact' }}
       />
-      <PageSection variant="gray" reveal={false}>
-        <JobListing
-          title="On-Field Logiworkx Lead"
-          positions="10 open positions"
-          description={content.jobs.sections[0]?.body ?? ''}
-          location="PAN India — ChaseHorse"
-        />
-      </PageSection>
-      <InnerCta
+
+      <section className="bg-[#f4f4f4] px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-[900px]">
+          <JobListing
+            title="On-Field Logiworkx Lead"
+            positions="10 open positions"
+            description={content.jobs.sections[0]?.body ?? ''}
+            location="PAN India — ChaseHorse"
+          />
+        </div>
+      </section>
+
+      <ProductOrderCta
         title="Don't see the right role?"
         description="Send us your profile — we're always looking for logistics talent."
-        href="/contact?subject=Job Application"
-        buttonLabel="Send Application"
+        primaryLabel="Send Application"
+        secondaryLabel="Contact"
+        secondaryHref="/contact?subject=Job Application"
       />
     </>
   );

@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LeadFormProvider } from '@/components/lead-form-provider';
+import { CartProvider } from '@/components/cart-provider';
 import { SmoothScroll } from '@/components/motion/smooth-scroll';
 import { LeadFormModal } from '@/components/sections/lead-form-modal';
 import { SiteContentProvider } from '@/components/site-content-provider';
@@ -47,12 +48,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <SiteContentProvider initial={getSiteContent()}>
             <LeadFormProvider>
-              <SmoothScroll>
-                <SiteHeader />
-                <main>{children}</main>
-                <SiteFooter />
-              </SmoothScroll>
-              <LeadFormModal />
+              <CartProvider>
+                <SmoothScroll>
+                  <SiteHeader />
+                  <main>{children}</main>
+                  <SiteFooter />
+                </SmoothScroll>
+                <LeadFormModal />
+              </CartProvider>
             </LeadFormProvider>
           </SiteContentProvider>
         </ThemeProvider>

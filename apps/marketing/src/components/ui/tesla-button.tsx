@@ -50,6 +50,14 @@ export function TeslaButton({
   }
 
   if (href) {
+    const external = /^https?:\/\//i.test(href);
+    if (external) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+          {label}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={classes}>
         {label}

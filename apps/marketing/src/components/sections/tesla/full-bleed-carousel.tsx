@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { CarouselDots } from '@/components/ui/carousel-dots';
 
@@ -29,6 +30,7 @@ export function FullBleedCarousel({
   slides,
   className,
   mode = 'hero',
+  showArrows = true,
   autoplayDelay = 7000,
   onSlideChange,
   renderOverlay,
@@ -88,6 +90,27 @@ export function FullBleedCarousel({
           ))}
         </div>
       </div>
+
+      {slides.length > 1 && showArrows && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous slide"
+            onClick={() => emblaApi?.scrollPrev()}
+            className="absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 items-center justify-center rounded-full bg-white/25 p-2 text-white backdrop-blur-sm transition hover:bg-white/40 sm:flex"
+          >
+            <ChevronLeft className="h-5 w-5" strokeWidth={2} />
+          </button>
+          <button
+            type="button"
+            aria-label="Next slide"
+            onClick={() => emblaApi?.scrollNext()}
+            className="absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 items-center justify-center rounded-full bg-white/25 p-2 text-white backdrop-blur-sm transition hover:bg-white/40 sm:flex"
+          >
+            <ChevronRight className="h-5 w-5" strokeWidth={2} />
+          </button>
+        </>
+      )}
 
       {slides.length > 1 && (
         <CarouselDots
