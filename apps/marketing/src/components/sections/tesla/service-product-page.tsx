@@ -129,7 +129,28 @@ export function ServiceProductPage({
           </div>
         </section>
       )}
-
+      {(service.deliverables?.length ?? 0) > 0 && (
+        <section className="bg-white px-6 py-14">
+          <div className="mx-auto max-w-[1000px]">
+            <h2 className="text-center text-[28px] font-medium text-[#171a20]">
+              Key Deliverables
+              </h2>
+              
+              <div className="mt-8 grid gap-4 md:grid-cols-2">
+                {service.deliverables!.map((deliverable) => (
+                  <div
+                  key={deliverable}
+                  className="rounded-xl border border-[#eee] bg-[#f8f8f8] px-5 py-4"
+                  >
+                    <p className="text-[14px] text-[#393c41]">
+                      {deliverable}
+                      </p>
+                      </div>
+                    ))}
+                 </div>
+                </div>
+              </section>
+            )}
       <div id="highlights">
         <ProductSpecs
           title="Features & Benefits"
