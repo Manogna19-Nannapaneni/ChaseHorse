@@ -41,21 +41,33 @@ export function getSubservice(slug: string, subSlug: string): SubserviceContent 
   const page = getPage(slug);
   const modules = page?.sections.find((s) => s.type === 'modules')?.modules ?? [];
 
-  const fromModule = modules.find((m) => moduleSlug(m.title) === subSlug);
-  if (fromModule) {
-    return {
-      slug: subSlug,
-      title: fromModule.title,
-      description: fromModule.body,
-      body: fromModule.body,
-      workflow: service.workflow,
-      audience: service.audience,
-      problems: service.problems,
-      features: [fromModule.title],
-      benefits: service.benefits,
-      outcomes: service.outcomes,
-    };
-  }
+  const subservice = service.subservices?.find(
+  (s) => s.slug === subSlug
+);
 
-  return service.subservices?.find((s) => s.slug === subSlug) ?? null;
+if (subservice) {
+  return {
+    ...subservice,
+    workflow: subservice.workflow ?? service.workflow,
+  };
+}
+
+const fromModule = modules.find((m) => moduleSlug(m.title) === subSlug);
+
+if (fromModule) {
+  return {
+    slug: subSlug,
+    title: fromModule.title,
+    description: fromModule.body,
+    body: fromModule.body,
+    workflow: fromModule.workflow ?? service.workflow,
+    audience: service.audience,
+    problems: service.problems,
+    features: [fromModule.title],
+    benefits: service.benefits,
+    outcomes: service.outcomes,
+  };
+}
+
+return null;
 }
