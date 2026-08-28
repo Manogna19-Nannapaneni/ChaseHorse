@@ -10,9 +10,8 @@ export function buildMegaMenus(content: RuntimeSiteContent): Record<string, Mega
   const products = content.products ?? [];
   const courses = content.courses ?? [];
   const services = content.services ?? [];
-  const insights = content.insights ?? [];
   const partners = content.partners;
-  const liveMarket = content.liveMarket;
+
   const whatsappUrl = partners?.whatsappUrl ?? WHATSAPP_DEFAULT;
   const formUrl = partners?.formUrl ?? PARTNERS_FORM;
 
@@ -25,8 +24,7 @@ export function buildMegaMenus(content: RuntimeSiteContent): Record<string, Mega
     Platform: {
       layout: 'resources',
       title: 'Platform',
-      description:
-        'Growth Enabler Logiworkx Platform — Human Interface + Technology + ESG + Market.',
+      description: 'Growth Enabler Logiworkx Platform — Human Interface + Technology + ESG + Market.',
       exploreLabel: 'Explore Platform',
       exploreHref: '/platform',
       items: [
@@ -117,36 +115,56 @@ export function buildMegaMenus(content: RuntimeSiteContent): Record<string, Mega
     'Live Market': {
       layout: 'resources',
       title: 'Live Market',
-      description: 'Market intelligence and logistics insights from ChaseHorse GELP.',
-      exploreLabel: 'Explore All Insights',
+      description: 'Market intelligence, live execution, and logistics insights from ChaseHorse GELP.',
+      exploreLabel: 'Explore Live Market',
       exploreHref: '/live-market',
-      items: (
-        liveMarket?.cards ??
-        insights.map((i) => ({
-          title: i.title,
-          body: i.date,
-          href: `/live-market#${i.slug}`,
-          image: i.image,
-        }))
-      ).slice(0, 4).map((c) => ({
-        label: c.title,
-        description: c.body,
-        href: c.href,
-        image: c.image ?? IMAGES.logistics,
-      })),
+      items: [
+        {
+          label: 'Book Truck Now',
+          description: 'Instant booking and dispatch for full and part truck loads.',
+          href: '/live-market/book-truck',
+          image: IMAGES.logistics,
+        },
+        {
+          label: 'Book Truck Terminal Space',
+          description: 'Reserve dedicated bay, parking, and terminal space instantly.',
+          href: '/live-market/terminal-space',
+          image: IMAGES.warehouse,
+        },
+        {
+          label: 'Deploy On-field Lead',
+          description: 'Assign verified on-ground logistics professionals for seamless operations.',
+          href: '/live-market/deploy-lead',
+          image: IMAGES.team,
+        },
+        {
+          label: 'Secure Trip Finance',
+          description: 'Fast, reliable working capital and fuel finance for active trips.',
+          href: '/live-market/trip-finance',
+          image: IMAGES.digital,
+        },
+        {
+          label: 'Today Freight Index',
+          description: 'Real-time spot rates, lane trends, and market benchmark indices.',
+          href: '/live-market/freight-index',
+          image: IMAGES.featured.supplyChain,
+        },
+      ],
       railTabs: [
         {
-          label: 'Insights',
-          links: insights.map((i) => ({
-            label: i.title,
-            href: `/live-market#${i.slug}`,
-          })),
+          label: 'Quick Access',
+          links: [
+            { label: 'Book Truck Now', href: '/live-market/book-truck' },
+            { label: 'Terminal Space', href: '/live-market/terminal-space' },
+            { label: 'Freight Index', href: '/live-market/freight-index' },
+            { label: 'Trip Finance', href: '/live-market/trip-finance' },
+          ],
         },
       ],
       promo: {
-        title: 'Open Live Market',
-        description: 'Browse market cards and GELP intelligence.',
-        ctaLabel: 'Explore',
+        title: 'Live Market Hub',
+        description: 'Access real-time freight indices, terminal booking, and trip finance.',
+        ctaLabel: 'Open Market',
         href: '/live-market',
         image: IMAGES.featured.ship,
       },
@@ -204,9 +222,37 @@ export function buildMegaMenus(content: RuntimeSiteContent): Record<string, Mega
     Partners: {
       layout: 'partners',
       title: 'Partners',
-      description: 'Apply via our partner form or join the WhatsApp group for direct access.',
+      description: 'Join our growing network of on-field logistics experts, transportation professionals, and terminal operators. Apply via our partner form or join the WhatsApp group for direct access.',
+      targetAudience: [
+        {
+          title: 'Join us - onfield logistics professionals',
+          description: 'Join us if you are an expert on the ground ensuring smooth daily operations and execution.',
+          icon: 'users',
+        },
+        {
+          title: 'Join us - Transportation professionals',
+          roles: [
+            'Transporters',
+            'Fleet owners',
+            'Drivers',
+            'Freight traders',
+            'Freight financials'
+          ],
+          icon: 'truck',
+        },
+        {
+          title: 'Join us - Truck terminal space',
+          description: 'Join us to integrate your truck terminal spaces and infrastructure into our growing network.',
+          icon: 'map-pin',
+        },
+      ],
       actions: [
-        { label: 'Partner Application Form', href: formUrl, variant: 'primary', external: true },
+        {
+          label: 'Partner Application Form',
+          href: formUrl,
+          variant: 'primary',
+          external: true,
+        },
         {
           label: partners?.whatsappLabel ?? 'Join WhatsApp Group',
           href: whatsappUrl,
