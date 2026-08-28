@@ -4,7 +4,12 @@ export interface ContentSection {
   subtitle?: string;
   body?: string;
   items?: string[];
-  modules?: { number: string; title: string; body: string }[];
+  modules?: {
+    number: string;
+    title: string;
+    body: string;
+    workflow?: WorkflowStep[];
+  }[];
   stats?: { label: string; value: string }[];
   image?: string;
   steps?: WorkflowStep[];
@@ -124,6 +129,7 @@ export interface SubserviceContent {
   problems?: string[];
   audience?: string;
   features?: string[];
+  deliverables?: string[];
   benefits?: string[];
   outcomes?: string[];
   workflow?: WorkflowStep[];
@@ -137,6 +143,7 @@ export interface TierService {
   audience?: string;
   problems?: string[];
   features?: string[];
+  deliverables?: string[];
   benefits?: string[];
   outcomes?: string[];
   workflow?: WorkflowStep[];

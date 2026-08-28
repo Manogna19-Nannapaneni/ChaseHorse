@@ -289,8 +289,164 @@
       "slug": "digital-transformation",
       "title": "Digital Transformation",
       "description": "End-to-end digital transformation for logistics operations.",
-      "tier": 1
+      "tier": 1,
+      "deliverables": [
+        "Digital transformation assessment",
+        "Implementation roadmap",
+        "Configured digital solution",
+        "Deployment and handover documentation"
+      ],
+      "workflow": [
+        {
+          "number": "01",
+          "title": "Digital Assessment",
+          "body": "Review current logistics processes, systems, data flows, and operational challenges."
+        },
+        {
+          "number": "02",
+          "title": "Transformation Roadmap",
+          "body": "Define the target operating model, priorities, technology requirements, and implementation plan."
+        },
+        {
+          "number": "03",
+          "title": "Solution Implementation",
+          "body": "Configure and deploy the agreed digital capabilities across the relevant logistics operations."
+        },
+        {
+          "number": "04",
+          "title": "Testing & Handover",
+          "body": "Validate the solution, complete operational readiness checks, and hand over the implementation."
+        },
+        {
+          "number": "05",
+          "title": "Performance Review",
+          "body": "Review agreed KPIs and identify improvements or opportunities for the next transformation phase."
+        }
+      ],
+      "subservices": [
+        {
+          "slug": "transport-management-system-tms",
+          "title": "Transport Management System (TMS)",
+          "description": "Digitize transport planning, execution, tracking, and operational visibility.",
+          "workflow": [
+    {
+      "number": "01",
+      "title": "Workflow Analysis",
+      "body": "Thoroughly map and understand the customer's existing transportation workflow. This involves auditing current logistics operations, identifying bottlenecks, and defining the precise requirements for digitization."
     },
+    {
+      "number": "02",
+      "title": "Master Data Gathering",
+      "body": "Collect and structure all foundational data. This includes profiling transporters, cataloging vehicle fleets, mapping standard routes, and compiling comprehensive customer master data."
+    },
+    {
+      "number": "03",
+      "title": "System Configuration",
+      "body": "Tailor the TMS to match the specific business logic identified in the workflow analysis. This includes routing algorithms, freight calculation rules, and automated dispatch parameters."
+    },
+    {
+      "number": "04",
+      "title": "Data Migration & Upload",
+      "body": "Securely upload the gathered master data into the configured system. This ensures data integrity, removes duplicates, and establishes the baseline database for live operations."
+    },
+    {
+      "number": "05",
+      "title": "Roles & Permissions",
+      "body": "Configure role-based access control and assign appropriate permissions for system administrators, dispatchers, drivers, and external clients."
+    },
+    {
+      "number": "06",
+      "title": "User Training",
+      "body": "Conduct comprehensive training sessions for all system users to support adoption, minimize operational errors, and familiarize teams with the new digital workflow."
+    },
+    {
+      "number": "07",
+      "title": "System Go-Live",
+      "body": "Officially launch the TMS and transition from legacy systems to the new digital platform for active daily operations."
+    },
+    {
+      "number": "08",
+      "title": "Monitoring & Support",
+      "body": "Monitor live transactions to ensure system stability, provide ongoing technical support, address user queries, and optimize system performance."
+    }
+  ],
+  "deliverables": [
+    "Live TMS — A fully operational, customized Transport Management System deployed to production.",
+    "Secure User Access — Role-specific portals and authenticated login credentials for all stakeholders.",
+    "Analytics Dashboard — A centralized hub displaying real-time metrics, fleet tracking, and KPI monitoring.",
+    "Automated Reports — Scheduled and on-demand reporting tools for freight costs, delivery times, and vehicle utilization."
+  ]
+},
+        {
+  "slug": "online-procurement",
+  "title": "Online Procurement",
+  "description": "Streamline procurement workflows, supplier coordination, approvals, and purchasing visibility.",
+  "workflow": [
+    {
+      "number": "01",
+      "title": "Study Current Process",
+      "body": "Audit existing procurement behaviors, identify manual bottlenecks, and map out the specific purchasing needs of different departments."
+    },
+    {
+      "number": "02",
+      "title": "Create Supplier Database",
+      "body": "Onboard approved vendors into a centralized system. Include critical details such as payment terms, contact information, and compliance documents."
+    },
+    {
+      "number": "03",
+      "title": "Configure Request Workflow",
+      "body": "Set up the digital Purchase Requisition (PR) forms. Define mandatory fields to ensure requesters provide complete information upfront."
+    },
+    {
+      "number": "04",
+      "title": "Setup Quotation (RFQ) Process",
+      "body": "Digitize the Request for Quotation system. Enable automated quote comparisons to help buyers select the most cost-effective vendor."
+    },
+    {
+      "number": "05",
+      "title": "Configure Approvals",
+      "body": "Implement multi-tiered authorization routing based on spending limits, departmental budgets, and hierarchical company rules."
+    },
+    {
+      "number": "06",
+      "title": "Enable PO Generation",
+      "body": "Automate the conversion of approved requests and quotes into official, legally binding Purchase Orders ready for vendor dispatch."
+    },
+    {
+      "number": "07",
+      "title": "Train Procurement Team",
+      "body": "Conduct comprehensive training sessions for buyers, approvers, and administrators to ensure seamless system adoption."
+    },
+    {
+      "number": "08",
+      "title": "Monitor Purchase Cycle",
+      "body": "Track metrics post-launch. Analyze cycle times (from request to order) and optimize workflows to eliminate remaining frictions."
+    }
+  ],
+  "deliverables": [
+    "Digital Purchase Requests — Standardized, error-free requisition forms.",
+    "RFQ Management — Automated vendor bidding and price comparisons.",
+    "Approval Workflow — Configured, multi-tier routing for financial control.",
+    "Purchase Orders — Auto-generated, formal purchasing contracts."
+  ]
+},
+        {
+          "slug": "contracts-rfq-approvals",
+          "title": "Contracts – RFQ & Approvals",
+          "description": "Manage RFQs, contract workflows, approvals, and commercial governance through a structured digital process."
+        },
+        {
+          "slug": "inward-consignment-visibility",
+          "title": "Inward Consignment Visibility",
+          "description": "Improve visibility of inbound consignments, status tracking, exceptions, and operational handoffs."
+        },
+        {
+          "slug": "data-analytics-mis",
+          "title": "Data Analytics – MIS",
+          "description": "Turn logistics data into management information, KPI dashboards, and actionable operational insights."
+        }
+        ]
+      },
     {
       "slug": "ch-deploy",
       "title": "CH Deploy",
@@ -585,6 +741,37 @@
           "type": "text",
           "title": "Digital Transformation",
           "body": "Transform your logistics operations with end-to-end digital capabilities, integrated systems, and deployment-ready technology stacks."
+        },
+        {
+          "type": "modules",
+          "title": "Digital Transformation Services",
+          "modules": [
+            {
+              "number": "01",
+              "title": "Transport Management System (TMS)",
+              "body": "Digitize transport planning, execution, tracking, and operational visibility."
+            },
+            {
+              "number": "02",
+              "title": "Online Procurement",
+              "body": "Streamline procurement workflows, supplier coordination, approvals, and purchasing visibility."
+            },
+            {
+              "number": "03",
+              "title": "Contracts – RFQ & Approvals",
+              "body": "Manage RFQs, contract workflows, approvals, and commercial governance through a structured digital process."
+            },
+            {
+              "number": "04",
+              "title": "Inward Consignment Visibility",
+              "body": "Improve visibility of inbound consignments, status tracking, exceptions, and operational handoffs."
+            },
+            {
+              "number": "05",
+              "title": "Data Analytics – MIS",
+              "body": "Turn logistics data into management information, KPI dashboards, and actionable operational insights."
+            }
+          ]
         }
       ]
     },
